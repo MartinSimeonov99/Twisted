@@ -1536,6 +1536,12 @@ body {
     height: 100%;
 }
 
+.recent-posts .bnr {
+    display: block;
+    max-height: 88px;
+    height: 100%;
+}
+
 .recent-posts .post-category {
     font-size: 16px;
     color: #6f6f6f;
