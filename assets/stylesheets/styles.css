@@ -55,6 +55,12 @@ section {
     background-color: #f6f6f6;
 }
 
+.logo-twisted {
+    margin-top: 75px;
+    margin-left: 280px;
+    width: 200px;
+}
+
 .logo-img {
     width: 240px;
     height: 230px;
@@ -83,6 +89,7 @@ section {
     margin-bottom: 0;
     color: #6f6f6f;
 }
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -346,6 +353,11 @@ section {
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
+
+.navbar {
+    margin-left: 650px;
+}
+
 @media (min-width: 1280px) {
     .navbar {
         padding: 0;
@@ -356,7 +368,7 @@ section {
         padding: 0;
         display: flex;
         list-style: none;
-        align-items: center;
+        align-items: right;
     }
 
     .navbar li {
@@ -1542,6 +1554,16 @@ body {
     display: block;
     max-height: 88px;
     height: 100%;
+}
+
+.recent-posts .forbes-logo {
+    max-width: 340px;
+    height: 80%;
+}
+
+.recent-posts .recursive {
+    width: 230px;
+    height: 70%;
 }
 
 .recent-posts .post-category {
