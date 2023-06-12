@@ -931,7 +931,7 @@ section {
 
 @media screen and (max-width: 768px) {
     .contact-section {
-        padding: 60px 20px;
+        padding: 80px 60px;
     }
 }
 
@@ -1196,6 +1196,12 @@ body {
 --------------------------------------------------------------*/
 .testimonials {
     padding-top: 0;
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        display: none;
+    }
 }
 
 .testimonials .testimonial-wrap {
@@ -1717,9 +1723,24 @@ body {
     .hero {
         padding-top: 40px;
         height: 400px; /* Adjust the height to your desired value */
-        width: 400px;
+        width: 720px;
     }
     
+    .hero .background-image {
+        object-fit: cover;
+        object-position: center; /* Adjust the position as needed */
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        padding-top: 40px;
+        height: 400px; /* Adjust the height to your desired value */
+        width: 400px;
+    }
+
     .hero .background-image {
         object-fit: cover;
         object-position: center; /* Adjust the position as needed */
