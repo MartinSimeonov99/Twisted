@@ -77,6 +77,12 @@ section {
     padding-bottom: 60px;
 }
 
+@media (max-width: 768px) {
+    .section-header {
+      padding-left: 50px;
+    }
+  }
+
 .section-header h2 {
     font-size: 32px;
     font-weight: 600;
@@ -358,6 +364,27 @@ section {
     margin-left: 650px;
 }
 
+@media only screen and (max-width: 767px) {
+    .header {
+      /* Add space between the logo and navigation bar button */
+      justify-content: space-between;
+      align-items: left;
+    }
+    
+    .logo-twisted {
+      /* Adjust the size of the logo for mobile view */
+      max-width: 120px; /* Adjust the value as needed */
+      margin-left: 145px;
+      margin-top: 13%;
+      
+    }
+    
+    .navbar-button {
+      /* Add margin/padding as needed to separate it from the logo */
+      margin-left: 10px; /* Adjust the value as needed */
+    }
+  }
+
 @media (min-width: 1280px) {
     .navbar {
         padding: 0;
@@ -581,7 +608,7 @@ section {
         padding: 10px 0;
         margin: 10px 20px;
         transition: all 0.5s ease-in-out;
-        background-color: #f85a40;
+        background-color: #2596be;
     }
 
     .navbar .dropdown > .dropdown-active,
@@ -1253,7 +1280,7 @@ body {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-    color: #f85a40;
+    color: #2596be;
     font-size: 26px;
     line-height: 0;
 }
