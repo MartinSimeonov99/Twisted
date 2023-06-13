@@ -77,12 +77,6 @@ section {
     padding-bottom: 60px;
 }
 
-@media (max-width: 768px) {
-    .section-header {
-      padding-left: 50px;
-    }
-  }
-
 .section-header h2 {
     font-size: 32px;
     font-weight: 600;
@@ -1214,6 +1208,14 @@ body {
     margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+    body {
+      width: 400px;
+      /* padding-left: 50px; */
+      
+    }
+  }
+
 .dot {
     color: var(--color-primary);
 }
@@ -1387,8 +1389,8 @@ body {
 
 @media (max-width: 1032px) {
     .banner {
-        margin-left: 15px;
-        margin-right: 1px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 
