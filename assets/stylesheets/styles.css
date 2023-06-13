@@ -872,6 +872,14 @@ section {
     margin-left: 75px;
 }
 
+@media (max-width: 768px) {
+    .clients img.logo-PCMania {
+        width: 120px;
+        height: 95px;
+        margin-left: 52px;
+    }
+  }
+
 .clients img.logo-Enbank {
     width: 180px;
     height: 80px;
