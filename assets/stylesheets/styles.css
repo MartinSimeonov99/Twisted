@@ -855,6 +855,14 @@ section {
     height: 58px;
 }
 
+@media (max-width: 768px) {
+    .clients img.logo-Fond {
+      width: 205px;
+      height: 58px;
+      margin-left: 20px;
+    }
+  }
+
 .clients img.logo-Inovation {
     width: 200px;
     height: 90px;
