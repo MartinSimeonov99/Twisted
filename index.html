@@ -708,136 +708,31 @@
 
   </main><!-- End #main -->
 
-  <!-- - - - - - - - -  Footer - - - - - - - -  -->
+<!-- - - - - - - - -  Footer - - - - - - - -  -->
+<footer id="footer" class="footer">
 
-<!-- footer -->
-<footer class="footer_style_2">
-    <div class="container-fuild">
-      <div class="row" style="margin-right: -27.3px;">
-        <div class="map_section">
-          <div id="map"></div>
-        </div>
-        <div class="footer_blog">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="main-heading left_text">
-                <h2>Twisted Technology</h2>
-              </div>
-              <p>Good for the planet, <br> Good for your pocket!</p>
-              <ul class="social_icons">
-                <li class="social-icon fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li class="social-icon in"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li class="social-icon ld"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                <li class="social-icon yt"><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <div class="main-heading left_text">
-                <h2>Additional links</h2>
-              </div>
-              <ul class="footer-menu">
-                <li><a href="#"><i class="fa fa-angle-right"></i> About us</a></li>
-                <li><a href="#"><i class="fa fa-angle-right"></i> Terms and conditions</a></li>
-                <li><a href="#"><i class="fa fa-angle-right"></i> Privacy policy</a></li>
-                <li><a href="#"><i class="fa fa-angle-right"></i> Guides</a></li>
-                <li><a href="#"><i class="fa fa-angle-right"></i> Contact us</a></li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <div class="main-heading left_text">
-                <h2>Services</h2>
-              </div>
-              <ul class="footer-menu">
-                <li><a href="#"><i class="fa fa-angle-right"></i> Business Portal</a></li>
-                <li><a href="#"><i class="fa fa-angle-right"></i> Repair IT</a></li>
-                <li><a href="#"><i class="fa fa-angle-right"></i> Warranty</a></li>
-                <li><a href="#"><i class="fa fa-angle-right"></i> Apply for franchise</a></li>
-                <li><a href="#"><i class="fa fa-angle-right"></i> Technical support</a></li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <div class="main-heading left_text">
-                <h2>Contact us</h2>
-              </div>
-              <p>Sofia, Tech Park<br>
-                Incubator, 2nd floor<br>
-                <span style="font-size:18px;"><a href="tel:+9876543210">+359 886 881 966</a></span></p>
-            </div>
-          </div>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-12 col-md-12 footer-info text-center">
+        <div class="social-links d-flex mt-4 justify-content-center">
+          <a href="https://twitter.com/TwistedBulgaria" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.facebook.com/TwistedBulgaria" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/twisted.bulgaria/" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/twistedbulgaria/" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
+
     </div>
-  </footer>
-  <!-- end footer -->
-  <!-- js section -->
-  <script src="{% static "js/jquery.min.js" %}"></script>
-  <script src="{% static "js/bootstrap.min.js" %}"></script>
-  <!-- menu js -->
-  <script src="{% static "js/menumaker.js" %}"></script>
-  <!-- wow animation -->
-  <script src="{% static "js/wow.js" %} "></script>
-  <!-- custom js -->
-  <script src="{% static "js/custom.js" %} "></script>
-  <!-- revolution js files -->
-  <script src="{% static 'revolution/js/jquery.themepunch.tools.min.js' %}"></script>
-  <script src="{% static 'revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
-  <script src="{% static 'revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
-  <script src="{% static 'revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
-  <script src="{% static 'revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
-  <script src="{% static 'revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
-  <script src="{% static 'revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
-  <script src="{% static 'revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
-  <script src="{% static 'revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
-  <script src="{% static 'revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
-  <script src="{% static 'revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
-  <!-- map js -->
-  <script>
-           // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-           // Australia.
-           function initMap() {
-             var map = new google.maps.Map(document.getElementById('map'), {
-               zoom: 11,
-               center: {lat: 42.66760724905402, lng: 23.37339736859178},
-           styles: [
-           {
-               "featureType": "all",
-               "elementType": "all",
-               "stylers": [
-                   {
-                       "invert_lightness": true
-                   },
-                   {
-                       "saturation": 10
-                   },
-                   {
-                       "lightness": 30
-                   },
-                   {
-                       "gamma": 0.5
-                   },
-                   {
-                       "hue": "#435158"
-                   }
-               ]
-           }
-       ]
-           });
-           
-             var image = 'images/it_service/location_icon_map_cont.png';
-             var beachMarker = new google.maps.Marker({
-               position: {lat: 40.645037, lng: -73.880224},
-               map: map,
-               icon: image
-             });
-           }
-        </script>
+  </div>
 
+  <div class="container mt-4">
+    <div class="copyright">
+      <!-- &copy; Copyright <strong><span>Twisted Technology</span></strong>. All Rights Reserved -->
+    </div>
+  </div>
 
-
-  <!-- google map js -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
-  <!-- end google map js -->
-  <!-- End Footer -->
+</footer><!-- End Footer -->
+<!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
