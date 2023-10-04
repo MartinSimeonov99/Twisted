@@ -523,6 +523,32 @@
         </form>
   </section><!-- End Call To Action Section -->
 
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(this);
+
+        // Send the data to a server-side script (e.g., Python script) using Fetch API
+        fetch("Twisted\static\email_receiver.py", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            // Handle the response from the server
+            console.log(data);
+            // You can update the page or show a confirmation message here
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+    });
+</script>
+
+
+
     <!-- - - - - - - - -  Our Team Section - - - - - - - -  -->
     <section id="team" class="team sections-bg">
       <div class="container" data-aos="fade-up">

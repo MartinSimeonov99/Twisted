@@ -468,64 +468,87 @@
     </section><!-- End Frequently Asked Questions Section -->
 
 
-     <!-- - - - - - - - -  Call To Action Section - - - - - - - -  -->
-     <section id="contact" class="contact-section">
-      <form class="content-container">
-          <svg
-            width="24px"
-            height="24px"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill="#1a1a1a"
-              d="M20.98 11.802a.995.995 0 0 0-.738-.771l-6.86-1.716 2.537-5.921a.998.998 0 0 0-.317-1.192.996.996 0 0 0-1.234.024l-11 9a1 1 0 0 0 .39 1.744l6.719 1.681-3.345 5.854A1.001 1.001 0 0 0 8 22a.995.995 0 0 0 .6-.2l12-9a1 1 0 0 0 .38-.998z"
-            />
-          </svg>
-          <div class="contact-form">
-          <!-- <div>
-            <h3 class="header light">Contact us<span class="dot">.</span></h3>
-            <p class="subtitle light">
-              Help us improve our platform.
-            </p>
-          </div> -->
-          <div>
-            <h3 class="header-style light">Контакти<span class="dot">.</span></h3>
-            <p class="subtitle">
-              Помогнете ни да подобрим нашата платформа.
-            </p>
-          </div>
-          <div class="contact-form-row">
-            <input
-              id="name"
-              class="input"
-              type="text"
-              placeholder="Въведете вашете име..."
-              required
-            />
-  
-            <input
-              id="email"
-              class="input"
-              type="email"
-              placeholder="Въведете вашия имейл адрес..."
-              required
-            />
-          </div>
-            <textarea
-              class="input"
-              placeholder="Вашето съобщение..."
-              required
-              rows="4"
-            ></textarea>
-            <label>
-              <input type="checkbox" id="privacy-policy" name="privacy-policy" value="yes" required>
-              <span class="checkbox-text">Прочел съм и съм съгласен с <a href="assets/Policy.pdf" style="color: white;">политиката за поверителност</a>.</span>
-            </label>
-            <button class="button primary" type="submit">Изпрати</button>
-          </div>
-        </form>
-  </section><!-- End Call To Action Section -->
+
+  <!-- - - - - - - - -  TEST Call To Action Section - - - - - - - -  -->
+  <section id="contact" class="contact-section">
+    <form class="content-container" action="http://127.0.0.1:5000/contact" method="POST">
+        <svg
+          width="24px"
+          height="24px"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="#1a1a1a"
+            d="M20.98 11.802a.995.995 0 0 0-.738-.771l-6.86-1.716 2.537-5.921a.998.998 0 0 0-.317-1.192.996.996 0 0 0-1.234.024l-11 9a1 1 0 0 0 .39 1.744l6.719 1.681-3.345 5.854A1.001 1.001 0 0 0 8 22a.995.995 0 0 0 .6-.2l12-9a1 1 0 0 0 .38-.998z"
+          />
+        </svg>
+        <div class="contact-form">
+        <div>
+          <h3 class="header-style light">Контакти<span class="dot">.</span></h3>
+          <p class="subtitle">
+            Помогнете ни да подобрим нашата платформа.
+          </p>
+        </div>
+        <div class="contact-form-row">
+          <input
+            id="name"
+            class="input"
+            type="text"
+            name="name"
+            placeholder="Въведете вашете име..."
+            required
+          />
+
+          <input
+            id="email"
+            class="input"
+            type="email"
+            name="email"
+            placeholder="Въведете вашия имейл адрес..."
+            required
+          />
+        </div>
+          <textarea
+            class="input"
+            placeholder="Вашето съобщение..."
+            name="message"
+            required
+            rows="4"
+          ></textarea>
+          <label>
+            <input type="checkbox" id="privacy-policy" name="privacy-policy" value="yes" required>
+            <span class="checkbox-text">Прочел съм и съм съгласен с <a href="assets/Policy.pdf" style="color: white;">политиката за поверителност</a>.</span>
+          </label>
+          <button class="button primary" type="submit">Изпрати</button>
+        </div>
+      </form>
+</section><!-- TEST End Call To Action Section -->
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(this);
+
+        // Send the data to a server-side script (e.g., Python script) using Fetch API
+        fetch("Twisted\static\email_receiver.py", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            // Handle the response from the server
+            console.log(data);
+            // You can update the page or show a confirmation message here
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+    });
+</script>
+
 
     <!-- - - - - - - - -  Our Team Section - - - - - - - -  -->
     <section id="team" class="team sections-bg">
