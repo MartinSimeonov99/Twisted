@@ -1727,6 +1727,21 @@ body {
     height: 70%;
 }
 
+.recent-posts .bloombergtv {
+    width: 305px;
+    height: 70%;
+}
+
+.recent-posts .greenup {
+    width: 200px;
+    height: 65%;
+}
+
+.recent-posts .economicbg {
+    width: 380px;
+    height: 80%;
+}
+
 .recent-posts .post-category {
     font-size: 16px;
     color: #6f6f6f;
