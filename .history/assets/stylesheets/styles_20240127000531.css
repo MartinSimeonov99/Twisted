@@ -2542,8 +2542,9 @@ body {
 
   footer {
     background-color: #f3f4f5;
-    box-shadow: 0px 0px 20px #2596be;
+    box-shadow: 0px 0px 0px #2596be;
     margin-top: 30px;
+    margin-left: 130px;
   }
 
   footer a {
