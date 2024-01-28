@@ -930,6 +930,12 @@ section {
     margin-left: 50px;
 }
 
+.clients img.logo-vlink {
+    width: 115px;
+    height: 95px;
+    margin-left: 85px;
+}
+
 .clients-slider {
     width: 1550px;
     margin: 0 auto;
