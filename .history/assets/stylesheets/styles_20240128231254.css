@@ -818,16 +818,16 @@ section {
 }
 
 @media (max-width: 768px) {
-  .mt-4 
+  .text-blue-600 
   {
     font-size: larger; /* Adjust the size as needed */
     margin-bottom: 20px; /* Give some space between stacked items */
   }
 }
 
-@media (max-width: 990px) {
-    .col-lg-4 {
-        text-align: center;
+@media (min-width: 600px) {
+    .img-fluid {
+      margin: 10px;
     }
 }
 
@@ -2593,23 +2593,6 @@ body {
     }
   }
 
-  @media (max-width: 1024px) {
-    .foot {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .items-end {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 100px; /* Adjust the max-width as needed */
-    }
-  }
   
 .facebook {
     margin: 10px;

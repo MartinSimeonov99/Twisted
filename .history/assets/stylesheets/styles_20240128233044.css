@@ -818,7 +818,7 @@ section {
 }
 
 @media (max-width: 768px) {
-  .mt-4 
+  .text-blue-600 
   {
     font-size: larger; /* Adjust the size as needed */
     margin-bottom: 20px; /* Give some space between stacked items */
