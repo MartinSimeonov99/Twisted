@@ -892,9 +892,9 @@ section {
 }
 
 .clients img.logo-PCMania {
-    width: 120px;
+    width: 145px;
     height: 95px;
-    margin-left: 75px;
+    margin-left: 70px;
 }
 
 @media (max-width: 768px) {
@@ -916,6 +916,18 @@ section {
     width: 170px;
     height: 50px;
     margin-left: 70px;
+}
+
+.clients img.logo-InnovationStarter {
+    width: 190px;
+    height: 75px;
+    margin-left: 50px;
+}
+
+.clients img.logo-TechPark {
+    width: 150px;
+    height: 95px;
+    margin-left: 50px;
 }
 
 .clients-slider {
