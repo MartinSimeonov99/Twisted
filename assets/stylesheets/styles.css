@@ -91,7 +91,7 @@ section {
 
 .section-header {
     text-align: center;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 
 .section-header h2 {
@@ -2567,3 +2567,17 @@ body {
       margin-bottom: 0;
     }
   }
+
+  
+.facebook {
+    margin: 10px;
+   }
+
+.insatgram {
+    margin: 10px;
+    }
+
+.linkedin {
+    margin: 10px;   
+    }
+ 
