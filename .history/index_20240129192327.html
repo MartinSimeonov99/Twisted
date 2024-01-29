@@ -135,11 +135,6 @@
     </style>
   <!-- End Hero Section -->
 
-  <div class="buttons-container">
-    <a class="rounded-button1" href="https://calendly.com/twisted-technology/demo">Book a Demo</a>
-    <a class="rounded-button2" href="https://docs.google.com/forms/d/1SvLaCJpiYZvucNdklFR8vJfVne4a-68OZVgUFZIlh_U/prefill">Become a Partner</a>
-  </div>
-
   <main id="main">
     <!-- - - - - - - - -  About Us Section - - - - - - - -  -->
     <section id="about" class="about">
@@ -531,7 +526,10 @@
 
  <!-- Script-->
  <script>
-  
+
+  let currentWordIndex = 0;
+  const wordContainer = document.querySelector('.dynamic-word-container');
+  const intervalDuration = 1800;
   // Map the words to their measured widths
   const wordWidths = {
       'report': 30, // Replace with actual width

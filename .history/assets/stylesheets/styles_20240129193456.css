@@ -2010,51 +2010,21 @@ body {
     color: #fff;
 }
 
-.buttons-container {
-    text-align: center;
-    place-content: center;
-    display: flex;
-  }
-
-.rounded-button1 {
-    flex: 0.1;
-    padding: 15px 50px;
+.rounded-button {
+    padding: 10px 20px;
     margin: 5px;
-    border: none;
-    background-color: #2596be;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 50px;
-    text-decoration: none; /* Remove underlines from links */
-    outline: none;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transitions for background and text color */
-  }
-
-  .rounded-button2 {
-    flex: 0.1;
-    size-adjust: 10px;
-    padding: 15px 50px;
-    margin: 5px;
-    border: none;
-    background-color: #4d4d4d;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 50px;
-    text-decoration: none; /* Remove underlines from links */
-    outline: none;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transitions for background and text color */
-  }
-
-  .rounded-button1:hover, .rounded-button1:focus {
-    background-color: #0056b3 !important; /* Darker background on hover */
-    color: rgb(192, 192, 192) !important; /* Ensuring text color doesn't change on hover */
+    border: none; /* Remove default border */
+    background-color: #007bff; /* Example background color */
+    color: white; /* Text color */
+    font-size: 16px; /* Example font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    border-radius: 15px; /* Soft rounded corners */
+    outline: none; /* Remove focus outline */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
   }
   
-  .rounded-button2:hover, .rounded-button2:focus {
-    background-color: #292929 !important; /* Darker background on hover */
-    color: rgb(192, 192, 192) !important; /* Ensuring text color doesn't change on hover */
+  .rounded-button:hover {
+    background-color: #0056b3; /* Darker background on hover */
   }
   
 

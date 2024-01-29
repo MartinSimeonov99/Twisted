@@ -135,11 +135,6 @@
     </style>
   <!-- End Hero Section -->
 
-  <div class="buttons-container">
-    <a class="rounded-button1" href="https://calendly.com/twisted-technology/demo">Book a Demo</a>
-    <a class="rounded-button2" href="https://docs.google.com/forms/d/1SvLaCJpiYZvucNdklFR8vJfVne4a-68OZVgUFZIlh_U/prefill">Become a Partner</a>
-  </div>
-
   <main id="main">
     <!-- - - - - - - - -  About Us Section - - - - - - - -  -->
     <section id="about" class="about">
@@ -531,7 +526,7 @@
 
  <!-- Script-->
  <script>
-  
+
   // Map the words to their measured widths
   const wordWidths = {
       'report': 30, // Replace with actual width
@@ -573,24 +568,29 @@ function changeWord() {
 }
 
 // Set the interval to change the word every 2 seconds
-setInterval(changeWord, 1800);
+//setInterval(changeWord, 1800);
 
 // Initial call to set the first word
-changeWord();
+//changeWord();
 
-document.addEventListener('visibilitychange', function() {
+let currentWordIndex = 0;
+  const wordContainer = document.querySelector('.dynamic-word-container');
+  const intervalDuration = 1800;
+
+function startWordChangeInterval() {
+  changeWordInterval = setInterval(changeWord, intervalDuration);
+}
+
+document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'visible') {
-      // Clear any existing intervals to avoid multiple intervals running
-      clearInterval(changeWordInterval);
-      // The tab has become visible so restart the animation
-      changeWord();
-      // Restart the interval
-      changeWordInterval = setInterval(changeWord, 1000);
+    changeWord(); // Change the word immediately upon gaining visibility
+    startWordChangeInterval(); // Restart the interval
   } else {
-      // Clear the interval when the tab is not visible
-      clearInterval(changeWordInterval);
+    clearInterval(changeWordInterval); // Clear the interval when the tab is not visible
   }
 });
+
+startWordChangeInterval();
 
 </script> 
 

@@ -2047,14 +2047,13 @@ body {
     transition: background-color 0.3s, color 0.3s; /* Smooth transitions for background and text color */
   }
 
-  .rounded-button1:hover, .rounded-button1:focus {
-    background-color: #0056b3 !important; /* Darker background on hover */
-    color: rgb(192, 192, 192) !important; /* Ensuring text color doesn't change on hover */
-  }
   
-  .rounded-button2:hover, .rounded-button2:focus {
-    background-color: #292929 !important; /* Darker background on hover */
-    color: rgb(192, 192, 192) !important; /* Ensuring text color doesn't change on hover */
+  .rounded-button1:hover {
+    background-color: #0056b3; /* Darker background on hover */
+  }
+
+  .rounded-button2:hover {
+    background-color: #292929; /* Darker background on hover */
   }
   
 
