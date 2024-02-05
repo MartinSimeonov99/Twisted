@@ -2076,64 +2076,38 @@ body {
     }
   }
 
-  .container1 {
-    min-inline-size: max-content;
-  }
-
-  @media (max-width: 768px) {
-    .container1 {
-        font-size: 15px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .main-text {
-        inline-size: min-content;
-        margin-left: 90px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .small-text {
-        visibility: hidden
-    }
-  }
-
 
   .image-grid {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 20px; /* Adjust the space between the images as needed */
   }
   
   .mini-image {
-    width: 350px;
-    margin-right: -10px;
+    width: 350px; /* Adjust the size as needed */
   }
   
- 
+  .central-content {
+    flex-basis: 100%; /* This ensures the central content is centered on its own line */
+    text-align: center;
+    /* Add more styling for your central content here */
+  }
   
   /* Example media query for screens that are 768px wide or less */
-  @media (max-width: 1600px) {
+  @media (max-width: 768px) {
     .mini-image {
-      width: 80%
-  }
-  }
-
-  @media (max-width: 1500px) {
-    .mini-image {
-      width: 90%
-  }
+      width: 50%; /* Each image will take up half the width of the container */
+    }
   }
   
   /* Example media query for screens that are 480px wide or less */
-  @media (max-width: 1400px) {
+  @media (max-width: 480px) {
     .mini-image {
-        visibility: hidden;
+      width: 50%; /* Each image will take up the full width of the container */
     }
   }
-
-
 
 /*--------------------------------------------------------------
 # Blog

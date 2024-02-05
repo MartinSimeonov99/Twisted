@@ -2087,15 +2087,9 @@ body {
   }
 
   @media (max-width: 768px) {
-    .main-text {
+    . {
         inline-size: min-content;
         margin-left: 90px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .small-text {
-        visibility: hidden
     }
   }
 

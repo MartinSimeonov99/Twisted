@@ -1530,7 +1530,7 @@ body {
         text-align: center;
     }
 
-    .banner__text-container,
+    .banner__text-container1,
     .banner__illustartion {
         flex-basis: auto;
         margin-left: 0;
@@ -2078,25 +2078,6 @@ body {
 
   .container1 {
     min-inline-size: max-content;
-  }
-
-  @media (max-width: 768px) {
-    .container1 {
-        font-size: 15px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .main-text {
-        inline-size: min-content;
-        margin-left: 90px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .small-text {
-        visibility: hidden
-    }
   }
 
 

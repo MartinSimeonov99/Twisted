@@ -2080,25 +2080,6 @@ body {
     min-inline-size: max-content;
   }
 
-  @media (max-width: 768px) {
-    .container1 {
-        font-size: 15px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .main-text {
-        inline-size: min-content;
-        margin-left: 90px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .small-text {
-        visibility: hidden
-    }
-  }
-
 
   .image-grid {
     display: flex;
@@ -2114,22 +2095,17 @@ body {
  
   
   /* Example media query for screens that are 768px wide or less */
-  @media (max-width: 1600px) {
+  @media (max-width: 1000px) {
     .mini-image {
-      width: 80%
-  }
-  }
-
-  @media (max-width: 1500px) {
-    .mini-image {
-      width: 90%
+        content: hidden;
+      /* width: 50%; */
   }
   }
   
   /* Example media query for screens that are 480px wide or less */
-  @media (max-width: 1400px) {
+  @media (max-width: 800px) {
     .mini-image {
-        visibility: hidden;
+        content: hidden;
     }
   }
 

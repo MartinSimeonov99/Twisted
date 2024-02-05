@@ -2095,7 +2095,7 @@ body {
 
   @media (max-width: 768px) {
     .small-text {
-        visibility: hidden
+        content: hidden
     }
   }
 

@@ -2071,69 +2071,10 @@ body {
   
     .rounded-button1,
     .rounded-button2 {
-      width: 97.5%;
-      padding: 15px; 
+      width: 100%; /* Full width buttons on small screens */
+      padding: 15px; /* Adjust the padding as needed */
     }
   }
-
-  .container1 {
-    min-inline-size: max-content;
-  }
-
-  @media (max-width: 768px) {
-    .container1 {
-        font-size: 15px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .main-text {
-        inline-size: min-content;
-        margin-left: 90px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .small-text {
-        visibility: hidden
-    }
-  }
-
-
-  .image-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .mini-image {
-    width: 350px;
-    margin-right: -10px;
-  }
-  
- 
-  
-  /* Example media query for screens that are 768px wide or less */
-  @media (max-width: 1600px) {
-    .mini-image {
-      width: 80%
-  }
-  }
-
-  @media (max-width: 1500px) {
-    .mini-image {
-      width: 90%
-  }
-  }
-  
-  /* Example media query for screens that are 480px wide or less */
-  @media (max-width: 1400px) {
-    .mini-image {
-        visibility: hidden;
-    }
-  }
-
-
 
 /*--------------------------------------------------------------
 # Blog
