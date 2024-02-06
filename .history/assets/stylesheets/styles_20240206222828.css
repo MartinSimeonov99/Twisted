@@ -2084,7 +2084,6 @@ body {
   @media (max-width: 768px) {
     .container1 {
         font-size: 15px;
-        margin-bottom: -80px;
     }
   }
 
