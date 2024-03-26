@@ -2057,7 +2057,7 @@ body {
   .buttons-container2 {
     text-align: center;
     display: flex;
-    margin-left: 35px;
+    justify-content: center;
   } 
   }
 

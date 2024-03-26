@@ -845,14 +845,7 @@ section {
 
 @media (max-width: 1200px) {
     .about-row {
-        place-content: flex-end;
-    }
-}
-
-@media (max-width: 768px) {
-    .about-row {
-        flex-direction: column;
-        margin-left: 0px;
+        justify-content: center;
     }
 }
 
@@ -2050,16 +2043,7 @@ body {
   .buttons-container2 {
     text-align: center;
     display: flex;
-  }
-  
-  @media (max-width: 768px)
-  {
-  .buttons-container2 {
-    text-align: center;
-    display: flex;
-    margin-left: 35px;
   } 
-  }
 
 .rounded-button1 {
     flex: 0.1;
