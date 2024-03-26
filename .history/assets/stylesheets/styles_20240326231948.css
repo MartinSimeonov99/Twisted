@@ -309,6 +309,26 @@ section {
     background-color: #f9f9f9;
 }
 
+@media (max-width: 1680px) {
+    .header {
+        transition: all 0.5s;
+        z-index: 997;
+        height: 90px;
+        background-color: #f9f9f9;
+        margin-right: 100px;
+}
+}
+
+@media (max-width: 1520px) {
+    .header {
+        transition: all 0.5s;
+        z-index: 997;
+        height: 90px;
+        background-color: #f9f9f9;
+        margin-right: 200px;
+}
+}
+
 .header.sticked {
     position: fixed;
     top: 0;
@@ -370,25 +390,6 @@ section {
 .navbar {
     place-content: center;
 }
-
-@media (max-width: 1680px) {
-    .navbar {
-        margin-right: 60px;
-}
-}
-
-@media (max-width: 1500px) {
-    .navbar {
-        margin-right: 80px;
-}
-}
-
-@media (min-width: 2200px) {
-    .navbar {
-        margin-left: 150px;
-}
-}
-
 
 @media only screen and (max-width: 1280px) {
     .header {
