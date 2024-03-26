@@ -832,6 +832,11 @@ section {
     }
 }
 
+.about-row {
+    display: flex;
+    margin-left: 250px;
+}
+
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
@@ -2023,6 +2028,11 @@ body {
     display: flex;
   }
 
+  .buttons-container2 {
+    text-align: center;
+    display: flex;
+  } 
+
 .rounded-button1 {
     flex: 0.1;
     padding: 15px 50px;
@@ -2045,6 +2055,21 @@ body {
     margin: 5px;
     border: none;
     background-color: #4d4d4d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    text-decoration: none; /* Remove underlines from links */
+    outline: none;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions for background and text color */
+  }
+
+  .rounded-button3 {
+    padding: 15px 50px;
+    margin: 5px;
+    margin-left: 45px;
+    border: none;
+    background-color: #2596be;
     color: white;
     font-size: 16px;
     cursor: pointer;
