@@ -2788,16 +2788,6 @@ body {
     }
   }
 
-  @media (max-width: 990px) {
-    .foot {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin-right: 65px;
-    }
-  }
-
   @media (max-width: 768px) {
     .items-end {
       white-space: nowrap;
@@ -2819,3 +2809,9 @@ body {
     margin: 10px;   
     }
  
+
+    @media (max-width: 1680px) {
+    .py-8 {
+    place-content: center;        
+    }
+}
