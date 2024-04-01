@@ -2218,22 +2218,11 @@ body {
   }
 
   @media (max-width: 768px) {
-    .main-text-bg {
-        inline-size: min-content;
-    }
-  }
-
-  @media (max-width: 768px) {
     .small-text {
         visibility: hidden
     }
   }
 
-  @media (max-width: 1020px) {
-    .small-text-bg {
-        visibility: hidden
-    }
-  }
 
   .image-grid {
     display: flex;

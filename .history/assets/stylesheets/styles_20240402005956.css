@@ -2235,6 +2235,13 @@ body {
     }
   }
 
+  @media (max-width: 768px) {
+    .dynamic-word-container {
+        align-items: center;
+    }
+  }
+
+
   .image-grid {
     display: flex;
     justify-content: center;

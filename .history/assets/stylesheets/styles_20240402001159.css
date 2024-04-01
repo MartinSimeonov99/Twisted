@@ -2195,6 +2195,13 @@ body {
     min-inline-size: max-content;
   }
 
+  @media (max-width: 1800px) {
+    .container1 {
+        font-size: 15px;
+        margin-bottom: -70px;
+        align-self: start;
+    }
+  }
 
   @media (max-width: 768px) {
     .container-bg1 {
@@ -2204,7 +2211,7 @@ body {
   }
 
   @media (max-width: 768px) {
-    .container1 {
+    .container-bg1 {
         font-size: 15px;
         margin-bottom: -80px;
     }
@@ -2218,22 +2225,11 @@ body {
   }
 
   @media (max-width: 768px) {
-    .main-text-bg {
-        inline-size: min-content;
-    }
-  }
-
-  @media (max-width: 768px) {
     .small-text {
         visibility: hidden
     }
   }
 
-  @media (max-width: 1020px) {
-    .small-text-bg {
-        visibility: hidden
-    }
-  }
 
   .image-grid {
     display: flex;

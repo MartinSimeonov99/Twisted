@@ -2217,11 +2217,6 @@ body {
     }
   }
 
-  @media (max-width: 768px) {
-    .main-text-bg {
-        inline-size: min-content;
-    }
-  }
 
   @media (max-width: 768px) {
     .small-text {
@@ -2234,6 +2229,7 @@ body {
         visibility: hidden
     }
   }
+
 
   .image-grid {
     display: flex;
