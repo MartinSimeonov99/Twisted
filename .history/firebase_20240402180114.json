@@ -3,8 +3,8 @@
     "public": ".",
     "rewrites": [
       {
-        "source": "**",
-        "destination": "/index.html"
+        "source": "/",
+        "destination": "/index-bg.html"
       }
     ]
   }
