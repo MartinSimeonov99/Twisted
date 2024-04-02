@@ -2862,12 +2862,13 @@ body {
     }
   }
 
-  @media (max-width: 1024px) {
-    .foot-bg {
+  @media (max-width: 990px) {
+    .foot {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      margin-right: 65px;
     }
   }
 
@@ -2881,38 +2882,12 @@ body {
     }
   }
 
-  @media (max-width: 990px) {
-    .foot-bg {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin-right: 65px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .foot-bg {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      margin-right: 65px;
-    }
-  }
-
   @media (max-width: 768px) {
     .items-end {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
       max-width: 100px; /* Adjust the max-width as needed */
-    }
-  }
-
-  @media (max-width: 768px) {
-    .items-end-bg {
-      text-overflow: ellipsis;
     }
   }
   

@@ -2909,12 +2909,6 @@ body {
       max-width: 100px; /* Adjust the max-width as needed */
     }
   }
-
-  @media (max-width: 768px) {
-    .items-end-bg {
-      text-overflow: ellipsis;
-    }
-  }
   
 .facebook {
     margin: 10px;
