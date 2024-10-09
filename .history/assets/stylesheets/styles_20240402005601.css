@@ -2172,16 +2172,6 @@ body {
     .rounded-button1,
     .rounded-button2 {
         white-space: nowrap;
-        
-    }
-  }
-
-  @media (max-width: 768px) {
-    .rounded-button-bg1,
-    .rounded-button-bg2 {
-        white-space: nowrap;
-        margin-inline: auto;
-        
     }
   }
 
@@ -2244,6 +2234,13 @@ body {
         visibility: hidden
     }
   }
+
+  @media (max-width: 1020px) {
+    .dynamic-word-container {
+        
+    }
+  }
+
 
   .image-grid {
     display: flex;
@@ -2872,39 +2869,10 @@ body {
     }
   }
 
-  @media (max-width: 1024px) {
-    .foot-bg {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-
   @media (max-width: 990px) {
     .foot {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin-right: 65px;
-    }
-  }
-
-  @media (max-width: 990px) {
-    .foot-bg {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin-right: 65px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .foot-bg {
-      display: flex;
-      flex-direction: column;
       justify-content: space-between;
       align-items: center;
       margin-right: 65px;
@@ -2917,12 +2885,6 @@ body {
       overflow: hidden;
       text-overflow: ellipsis;
       max-width: 100px; /* Adjust the max-width as needed */
-    }
-  }
-
-  @media (max-width: 768px) {
-    .items-end-bg {
-      text-overflow: ellipsis;
     }
   }
   

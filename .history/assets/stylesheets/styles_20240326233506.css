@@ -371,13 +371,13 @@ section {
     place-content: center;
 }
 
-@media (max-width: 1680px) and (min-width: 1280px) {
+@media (max-width: 1680px) {
     .navbar {
         margin-right: 60px;
 }
 }
 
-@media (max-width: 1500px) and (min-width: 1280px) {
+@media (max-width: 1500px) {
     .navbar {
         margin-right: 80px;
 }
@@ -390,7 +390,7 @@ section {
 }
 
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1279px) {
     .header {
       /* Add space between the logo and navigation bar button */
       justify-content: space-between;
@@ -2111,38 +2111,6 @@ body {
     transition: background-color 0.3s, color 0.3s; /* Smooth transitions for background and text color */
   }
 
-  .rounded-button-bg1 {
-    flex: 0.1;
-    padding: 15px 50px;
-    margin: 5px;
-    border: none;
-    background-color: #2596be;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 50px;
-    text-decoration: none; /* Remove underlines from links */
-    outline: none;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transitions for background and text color */
-  }
-
-  .rounded-button-bg2 {
-    flex: 0.1;
-    size-adjust: 10px;
-    padding: 15px 50px;
-    margin: 5px;
-    border: none;
-    background-color: #4d4d4d;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 50px;
-    text-decoration: none; /* Remove underlines from links */
-    outline: none;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transitions for background and text color */
-    align-content: center;
-  }
-
   .rounded-button3 {
     padding: 15px 50px;
     margin: 5px;
@@ -2172,16 +2140,6 @@ body {
     .rounded-button1,
     .rounded-button2 {
         white-space: nowrap;
-        
-    }
-  }
-
-  @media (max-width: 768px) {
-    .rounded-button-bg1,
-    .rounded-button-bg2 {
-        white-space: nowrap;
-        margin-inline: auto;
-        
     }
   }
 
@@ -2201,18 +2159,6 @@ body {
     min-inline-size: max-content;
   }
 
-  .container-bg1 {
-    min-inline-size: max-content;
-  }
-
-
-  @media (max-width: 768px) {
-    .container-bg1 {
-        font-size: 15px;
-        margin-bottom: -80px;
-    }
-  }
-
   @media (max-width: 768px) {
     .container1 {
         font-size: 15px;
@@ -2228,22 +2174,11 @@ body {
   }
 
   @media (max-width: 768px) {
-    .main-text-bg {
-        inline-size: min-content;
-    }
-  }
-
-  @media (max-width: 768px) {
     .small-text {
         visibility: hidden
     }
   }
 
-  @media (max-width: 1020px) {
-    .small-text-bg {
-        visibility: hidden
-    }
-  }
 
   .image-grid {
     display: flex;
@@ -2872,39 +2807,10 @@ body {
     }
   }
 
-  @media (max-width: 1024px) {
-    .foot-bg {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-
   @media (max-width: 990px) {
     .foot {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin-right: 65px;
-    }
-  }
-
-  @media (max-width: 990px) {
-    .foot-bg {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin-right: 65px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .foot-bg {
-      display: flex;
-      flex-direction: column;
       justify-content: space-between;
       align-items: center;
       margin-right: 65px;
@@ -2917,12 +2823,6 @@ body {
       overflow: hidden;
       text-overflow: ellipsis;
       max-width: 100px; /* Adjust the max-width as needed */
-    }
-  }
-
-  @media (max-width: 768px) {
-    .items-end-bg {
-      text-overflow: ellipsis;
     }
   }
   

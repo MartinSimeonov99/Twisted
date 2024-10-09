@@ -2912,6 +2912,12 @@ body {
   }
 
   @media (max-width: 768px) {
+    .dynamic-word-container {
+      margin: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
     .items-end {
       white-space: nowrap;
       overflow: hidden;

@@ -2176,14 +2176,14 @@ body {
     }
   }
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .rounded-button-bg1,
     .rounded-button-bg2 {
         white-space: nowrap;
         margin-inline: auto;
         
     }
-  }
+  } */
 
   @media (max-width: 768px) {
     .buttons-container {

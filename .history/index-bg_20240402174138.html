@@ -64,7 +64,7 @@
                 <li><a href="assets/Policy.pdf">Политика за поверителност</a></li>
                 </ul>
             </li>
-            <li><a href="index-en.html">EN | BG</a></li>
+            <li><a href="index.html">EN | BG</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -467,7 +467,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Партньори</h2>
+          <h2>Парньори</h2>
         </div>
 
         <!-- - - - - - - - -  Clients Section - - - - - - - -  -->
@@ -543,7 +543,6 @@
             </div>
           </div>
           <p>© Twisted Technology. All rights reserved.</p>
-
       </div>
 
       <!-- Right side: Contact Information -->
@@ -560,8 +559,6 @@
           </ul>
       </div>
   </div>
-  <p style="text-align: -webkit-center;
-  font-size: 9px;">Туистед Технолоджи ООД е подкрепено от „Витоша Венчър Партнърс Фонд l“, частен капиталов фонд, съфинансиран от Европейските структурни и инвестиционни фондове по оперативна програма „Иновации и конкурентоспособност 2014-2020“, управляван от Фонд мениджър на финансови инструменти в България.</p>
 </footer>
 
 <!-- End Footer -->
@@ -588,9 +585,9 @@
   
   // Map the words to their measured widths
   const wordWidths = {
-      'всяко устройство': 200, // Replace with actual width
-      'всеки ремонт': 120,  // Replace with actual width
-      'всяка минута': 120  // Replace with actual width
+      'всяко устройство': 225, // Replace with actual width
+      'всеки ремонт': 135,  // Replace with actual width
+      'всяка минута': 135  // Replace with actual width
   };
 
   const words = ['всяко устройство', 'всеки ремонт', 'всяка минута'];
@@ -611,7 +608,14 @@ function changeWord() {
   newWord.textContent = words[currentWordIndex];
 
   // Set the width for the new word based on the pre-measured widths
-  wordContainer.style.width = `${wordWidths[words[currentWordIndex]]}px`;
+  // wordContainer.style.width = `${wordWidths[words[currentWordIndex]]}px`;
+
+  const screenWidth = window.innerWidth;
+  if (screenWidth > 768) {
+    wordContainer.style.width = `${wordWidths[words[currentWordIndex]]}px`;
+  } else {
+    wordContainer.style.width = 'auto'; // Set width to auto for smaller screens
+  }
 
   // Append the new word
   wordContainer.appendChild(newWord);

@@ -2172,16 +2172,6 @@ body {
     .rounded-button1,
     .rounded-button2 {
         white-space: nowrap;
-        
-    }
-  }
-
-  @media (max-width: 768px) {
-    .rounded-button-bg1,
-    .rounded-button-bg2 {
-        white-space: nowrap;
-        margin-inline: auto;
-        
     }
   }
 

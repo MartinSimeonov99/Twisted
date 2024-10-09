@@ -2172,16 +2172,6 @@ body {
     .rounded-button1,
     .rounded-button2 {
         white-space: nowrap;
-        
-    }
-  }
-
-  @media (max-width: 768px) {
-    .rounded-button-bg1,
-    .rounded-button-bg2 {
-        white-space: nowrap;
-        margin-inline: auto;
-        
     }
   }
 
@@ -2917,12 +2907,6 @@ body {
       overflow: hidden;
       text-overflow: ellipsis;
       max-width: 100px; /* Adjust the max-width as needed */
-    }
-  }
-
-  @media (max-width: 768px) {
-    .items-end-bg {
-      text-overflow: ellipsis;
     }
   }
   
